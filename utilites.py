@@ -85,7 +85,7 @@ def gpt_response(prompt_data):
     
     if len(prompt_data) == 1:
         if "data is not there" in prompt_data['Page no 0'][0]['content']:
-            res[f'Page no {i}'] =  "data is not there"
+            res['Page no 0'] =  "data is not there"
             # print("_add"*50)
             # print (prompt_data['Page no 0'][0])
             # print("_"*50)
